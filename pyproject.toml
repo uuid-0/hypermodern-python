@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "hypermodern-python"
+version = "0.1.0"
+authors = ["Alfiia Akhatova <example@gmail.com>"]
+readme = "README.md"
+description = "The hypermodern Python project"
+license = "MIT"
+homepage = "https://github.com/<your-username>/hypermodern-python"
+repository = "https://github.com/<your-username>/hypermodern-python"
+keywords = ["hypermodern"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+hypermodern-python = "hypermodern_python.console:main"
